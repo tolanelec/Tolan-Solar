@@ -302,7 +302,7 @@ $(document).ready(function(){
 				 </ul>
 			</span>
 			
-									<form action="" method="post" id="register-form"  novalidate="novalidate"  >
+			<form action="" method="post" id="register-form"  novalidate="novalidate"  >
 			
 			<h2>Quick Order</h2>
 			
