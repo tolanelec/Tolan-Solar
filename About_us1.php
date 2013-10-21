@@ -72,7 +72,7 @@ $(document).ready(function(){
 				
 				</ul>
 			</li>
-			<li><a class="nav" href="PV-Installation.php">Installation</a>
+			<li><a class="nav" href="PV-Installation.php">PV Installation</a>
 
 			</li>
 			<li><a class="nav" href="Support.php">Support</a>
@@ -100,14 +100,14 @@ $(document).ready(function(){
 			<span id="contentsfaq_update">
 		
 	        <h3 class="grey">About Tolan </h3>
-				<UL class="sidemenu">
+				<ul class="sidemenu">
 					<LI><a href="About_us1.php">Our business </a></LI>
 					<LI><a href="About_us2.php">Research </a></LI>
 					<LI><a href="About_us2.php">Business Philosophy </a></LI>
 					<LI><a href="About_us3.php">Projects</a> </LI>
 
-				</UL>
-			</p>	
+				</ul>
+				
 			    </br>
 				</br>
 				<h3 class="grey_bottom">Tolan Sections </h3>

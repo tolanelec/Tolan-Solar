@@ -66,16 +66,16 @@ h2 {
     border-radius: 15px 15px 15px 15px;
     display: inline-block;
     margin-bottom: 30px;
-    margin-left: -30px;
+    margin-left: 720px;
     margin-top:0px;
-    width: 180px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px
+    width: 200px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px
 	z-index:1;
 }
 
 #register-form .fieldgroup {
     background: url('form-divider.gif') repeat-x left top;
     display: inline-block;
-    width: 170px; padding-left:5px; padding-right:10px; padding-top:8px; padding-bottom:8px
+    width: 180px; padding-left:5px; padding-right:10px; padding-top:8px; padding-bottom:8px
 }
 
 #register-form .fieldgroup label {
@@ -288,54 +288,7 @@ $(document).ready(function(){
 				 
 				 </ul>
 			</span>
-			</div>
-			<div id="column_small">	
 			
-			<span id="topic">
-				<h3 id="topic">ABOUT US </h3>
-			</span>
-			<span id="contents4">
-			 <h3 class="blue">TOLAN SOLAR : OUR COMPANY </h3>
-		
-			<blockquote>
-			<p class="text">
-				Our business aims to provide cheaper alternatives to carbon-fuelled energy creation, by utilizing
-				existing and new technologies to cater for the domestic market. We believe in the potential
-				benefit of research in areas of ElectroChemistry, Electronics and <abbr title="photo voltaic ">PV</abbr>-Technology to produce Solutions
-				for unique problems in third world countries.
-			</p>
-			<p class="text">
-			 The Nigerian market: 
-				With the epileptic nature of electricity in Nigeria. Tolan has focused its attention on providing unique solutions that can 
-				fill the gap left by power shortage and unaffordable infrastructure. 
-				
-			</p>
-
-			</blockquote>
-			</span>
-			<span id="contents4">
-			 <h3 class="blue">
-					 OUR BUSINESS</h3>
-			
-			<blockquote>
-				<p class="text">
-			   Tolan Electronics was set up to provide cheaper and efficient energy and lighting solutions.
-			 Our research has enabled us utilize existing technologies to develop 
-			  products aimed at improving the living standards, reduce energy wastage and provide consumers with quality lighting and electrical products at affordable prices.
-				
-				
-				At the moment we have focused on manufacturing and sales of Energy efficient lighting products and <abbr title="photo voltaic ">PV</abbr> -solar technology. 
-				We also sell electronic parts, semi-conductor resales and made to order designs of lighting equipment.
-				We strive to make new technologies available to the our target market at affordable prices.
-				
-				</p>
-			</blockquote></span>
-			
-</div>
-			
-<div id="column_right">
-			
-<!--<span id="span#contentsfaq_right">-->
 			<form action="" method="post" id="register-form"  novalidate="novalidate"  >
 			
 			<h2>Quick Order</h2>
@@ -372,9 +325,8 @@ $(document).ready(function(){
 				</fieldset>		
 				</div>
 				</form>	
-			<!--</span>-->
 		    </div>
-    </div>
+
 	</div>		
 
 	    </div>
