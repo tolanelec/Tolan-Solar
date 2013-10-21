@@ -67,9 +67,9 @@ h2 {
     display: inline-block;
     margin-bottom: 30px;
     margin-left: 720px;
-    margin-top: -780px;
+    margin-top:0px;
     width: 200px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px
-	z-index: 1;
+	z-index:1;
 }
 
 #register-form .fieldgroup {
@@ -301,13 +301,8 @@ $(document).ready(function(){
 				 
 				 </ul>
 			</span>
-			</div>
 			
-			
-	
-			
-			
-			<form action="" method="post" id="register-form"  novalidate="novalidate"  >
+									<form action="" method="post" id="register-form"  novalidate="novalidate"  >
 			
 			<h2>Quick Order</h2>
 			
@@ -343,12 +338,7 @@ $(document).ready(function(){
 				</fieldset>		
 				</div>
 				</form>	
-			
-				
-
-			
-
-			
+			</div>
 
 			</div>
 			
