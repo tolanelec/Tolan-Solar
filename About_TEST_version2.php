@@ -14,97 +14,8 @@
 
 <link rel="stylesheet" type="text/css" href="../styles.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
-<style>
+<link rel="stylesheet" type="text/css" href="side_form.css">
 
-body {
-    background-color: #FFFFFF;
-	z-index:0;
-}
-#content { background-color:#C6F5F2; width:950px; min-height:550px; text-align:left; padding:20px;  }
-h1 {
-    padding:15px 10px 12px 10px;
-}
-h2 {
-    padding-left: 0px !important;
-}
-#header {
-    background-color: #CA410B !important;
-}
-.large { font-size:20px; }
-.orange { color:orange; }
-.italic { font-style:italic }
-.textmiddle {vertical-align:middle;}
-.padout { padding-left:20px; padding-right:20px; }
-.rounded-corners {
-     -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -khtml-border-radius: 40px;
-    border-radius: 40px;
-}
-.rounded-corners-top {
-     -moz-border-top-radius: 40px;
-    -webkit-border-radius: 40px;
-    -khtml-border-radius: 40px;
-    border-radius: 40px;
-}
-.right {
-    float: right;
-}
-.scrolldown { padding-left:20px; color:#EDECE8; font-size:14px; font-weight:bold; vertical-align:middle;
-	text-shadow: #6374AB 2px 2px 2px;
- }
- .contentblock { margin: 0px 20px; }
- .results { border: 1px solid blue; padding:15px; margin-top:15px; min-height:40px; }
- .blue-bold { font-size:16px; font-weight:bold; color:blue; }
-
- /* example styles for validation form demo */
-#register-form {
-	
-    background: #F8FDEF url('form-fieldset.gif') repeat-x left bottom;
-    border: 1px solid #DFDCDC;
-    border-radius: 15px 15px 15px 15px;
-    display: inline-block;
-    margin-bottom: 30px;
-    margin-left: -30px;
-    margin-top:0px;
-    width: 180px; padding-left:15px; padding-right:15px; padding-top:10px; padding-bottom:10px
-	z-index:1;
-}
-
-#register-form .fieldgroup {
-    background: url('form-divider.gif') repeat-x left top;
-    display: inline-block;
-    width: 170px; padding-left:5px; padding-right:10px; padding-top:8px; padding-bottom:8px
-}
-
-#register-form .fieldgroup label {
-    float: left;
-    padding: 8px 0 0;
-    text-align: right;
-    width: 80px;
-}
-
-#register-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
-    float: right;
-    margin: 5px 0;
-    height: 20px;
-}
-
-#register-form .submit {
-    padding: 8px;
-    width: 160px;
-    height: 40px !important;
-}
-
-#register-form .fieldgroup label.error {
-    color: #FB3A3A;
-    display: inline-block;
-    margin: 4px 0 5px 30px;
-    padding: 0;
-    text-align: left;
-    width: 170px;
-}
-</style>
 
 
 <link rel="stylesheet" href="default.css" type="text/css" />
@@ -164,14 +75,16 @@ $(document).ready(function(){
 				   required: true,
 				   minlength:9
 				 },
+				 product: "required",
 				 agree: "required"
 				 },
 				 messages: {
-				   firstname:"please enter your firstname",
-				   lastname:"please enter your lastname",
+				   firstname:"please enter firstname",
+				   lastname:"please enter lastname",
 				   contact: {
 				      required:"please provide a number",
-					  minlength: "your phone must be atleast 7 characters long" },
+					  minlength: "phone must be at least 9 characters long" },
+					  product: "please select product",
 					  email: "please enter a valid email address",
 					  agree:"please accept our policy"
 					},
@@ -344,7 +257,7 @@ $(document).ready(function(){
                     
 					    <div class="fieldgroup">
 					    <label for="name">Firstname</label>
-						<input type="text" name="name" size="20" required />
+						<input type="text" name="firstname" size="20" required />
 						</div>
 						<div class="fieldgroup">
 						 <label for="lastname">Lastname</label>
@@ -352,28 +265,29 @@ $(document).ready(function(){
 						</div>
 						<div class="fieldgroup">
 						<label for="email">Email</label>
-						<input type="text" name="email"  size="20" required />
+						<input type="text" name="email"  size="30" required />
 						</div>
 						
 					    <div class="fieldgroup">
-						<label for="contact">contact </label>
+						<label for="contact">Contact </label>
 						<input type="text" name="contact" size="20" required />
 						</div>
 						
 						<div class="fieldgroup">
-						<label for="product">select product </label>
-						<select name="products" size="20"/>
+						<label for="product">Product Selection </label>
+						<select name="product" size="20"/>
 						  <option>solar array</option>
 						  <option>roof install</option>
 						  <option>single room </option>
 						  <option>double room</option>
+						  <option>mobile panels</option>
 						  <option>commercial install</option>
 				        </select></br>
 						</div>
 	
 						<div class="fieldgroup">
-						<p class="right">By clicking register you agree to our <a target="_blank" href="/policy">policy</a>.</p>
-						<input type="submit" value="Register" class="submit" >
+						<p class="right">By clicking submit you agree to our <a target="_blank" href="/policy">policy</a>.</p>
+						<input type="submit" value="Submit" class="submit" >
 						</div>
 						
 						
