@@ -5,7 +5,7 @@ body {
 }
 #content { background-color:#00008B; width:950px; min-height:550px; text-align:left; padding:20px;  }
 h1 {
-    padding:15px 10px 12px 10px;
+    padding:15px 10px 12px 15px;
 }
 h2 {
     padding-left: 0px !important;
@@ -18,7 +18,7 @@ h2 {
 .orange { color:orange; }
 .italic { font-style:italic }
 .textmiddle {vertical-align:middle;}
-.padout { padding-left:20px; padding-right:20px; }
+.padout { padding-left:40px; padding-right:10px; }
 .rounded-corners {
      -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
@@ -33,6 +33,7 @@ h2 {
 }
 .right {
     float: right;
+	font-size: 70%;
 }
 .scrolldown { padding-left:20px; color:#EDECE8; font-size:13px; font-weight:bold; vertical-align:middle;
 	text-shadow: #6374AB 2px 2px 2px;
@@ -77,7 +78,7 @@ h2 {
 #register-form .fieldgroup select{
 	float: right;
 	margin: 5px 0;
-    height: 20px;
+    height: 35px;
 	width: 150px;
 }
 

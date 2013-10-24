@@ -1,30 +1,23 @@
-<?php if(preg_match("/MSIE/",getenv("HTTP_USER_AGENT")) || preg_match("/Internet Explorer/",getenv("HTTP_USER_AGENT"))){header('Location:http://localhost/xampp/tolansolar-v1/About_us.php'); }?>
-
+<?php if(preg_match("/MSIE/",getenv("HTTP_USER_AGENT")) || preg_match("/Internet Explorer/",getenv("HTTP_USER_AGENT"))){header('Location:http://localhost/xampp/tolansolar-v1/Enquires.php'); }?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transistional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-
-
-<title>Tolan Solar | About tolan| </title>
-
-<!--[!if IE]><!-->	
-<link rel="stylesheet" href="main3_style.css" type="text/css" >
-<link rel="stylesheet" type="text/css" href="side_form.css" >
- <!--<![endif]-->
-
+    <title>Tolan Solar | solar technology | enquires </title>
+	
+	
+<!--[if IE]><!-->	
+ <link rel="stylesheet" href="main3_style.css" type="text/css" >
+ <link rel="stylesheet" type="text/css" href="side_form.css">
+<!--<![endif]-->
  
-<meta name="description" content=" for affordable solar and lighting products "/>
-<meta name="keywords" content="About Tolan","LED-Lighting production", "Lighting products ", "Solar company"  />
-
-
-<script type-"text/javascript" src="jquerybrowserdetect.js">
+<script type = "text/javascript" src="jquerybrowserdetect.js">
 </script>
 
 <script type="text/javascript" src="jquery.min.js">
 </script>
-<!--<script type="text/javascript" src="jquery.validator.min.js"></script>-->
+
 <script type="text/javascript" src="jquery.validate.min.js">
 </script>
 
@@ -35,6 +28,7 @@ $(document).ready(function(){
   });
 });
 </script>
+
 
 <script type="text/javascript">
 /**
@@ -53,6 +47,7 @@ $(document).ready(function(){
             //form validation rules
             $("#register-form").validate({
 				rules: {
+				 title:"required",
 				 firstname: "required",
 				 lastname: "required",
 				 email: {
@@ -63,14 +58,23 @@ $(document).ready(function(){
 				   required: true,
 				   minlength:9
 				 },
+				 enquiry: {
+					required:true,
+					minLenght: 20
+				},
 				 agree: "required"
 				 },
 				 messages: {
+				   title:"please enter title",
 				   firstname:"please enter firstname",
 				   lastname:"please enter lastname",
 				   contact: {
 				      required:"please provide a number",
 					  minlength: "phone must be at least 9 characters long" },
+					enquiry{
+					  required:"please enter query",
+					  minLength:"please enter question"
+					},
 					  product: "please select product",
 					  email: "please enter a valid email address",
 					  agree:"please accept our policy"
@@ -92,24 +96,25 @@ $(document).ready(function(){
 </script>
 
 </head>
+
 <body>
 
-<div>
 <script>
-  (function() {
-    var cx = '016733281910472351058:azkatytop1i';
-    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+ (function() {
+   var cx = '016733281910472351058:azkatytop1i';
+   var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+       '//www.google.com/cse/cse.js?cx=' + cx;
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+ })();
+</script>	
 
-   <div id="Header">
+
+    <div id="Header">
 	     <div id="menu"> 
 		    <ul class="topmenu">
 			  <li class="search">
-			 <gcse:searchbox-only></gcse:llsearchbox-only>
+			   <gcse:searchbox-only></gcse:llsearchbox-only>
               </li>
 			</ul>
 			
@@ -117,10 +122,12 @@ $(document).ready(function(){
 		 
 		 <div id="logo">
 		   <span id="imag">
-			<img src="images/Tolan-Logo.jpg" alt="tolansolar logo"/>
+			<img src="images/Tolan-Logo.jpg"/>
 		   </span>
 		 </div>
-	
+
+
+    
 		 <ul class="navigate">
 		    <li><a class="nav" href="home.php"> Home </a>
 				<ul>
@@ -149,99 +156,62 @@ $(document).ready(function(){
 				</ul>
 			</li>
 		 </ul>
-	</div>
+	 
+		 
+	</div>	
+	
 	
     <div id="cf">
-	  	   <img class="bottom" src="images/container_bg9.jpg" alt="solar panel" />
-           <img class="top" src="images/container_bg3.jpg" alt="sunset off docks"/>	
-		   
+	  	   <img class="bottom" src="images/container_bg9.png"/>
+           <img class="top" src="images/freeimage-6126418-1-rural.jpg"/>	
 	</div>
 	
 	<div id="sidebar">
 	    <div id="column1">
-		<div id="column_left">
-			<span id="contentsfaq_update">
-		
-	        <h3 class="grey">About Tolan </h3>
-			<p>
-				<ul class="sidemenu">
-					<li><a href="About_us1.php">Our business </a></li>
-					<li><a href="About_us2.php">Research </a></li>
-					<li><a href="About_us2.php#business">Business Philosophy </a></li>
-					<li><a href="About_us3.php">Projects</a> </LI>
 
-				</UL>
-			</p>	
-			    </br>
-				</br>
-				<h3 class="grey_bottom">Tolan Sections </h3>
+			<span id="contentsfaq">
+		
+	        <h3 class="grey">Customer Support </h3>
 				<UL class="sidemenu">
-					<li><a href="Branches.php">Offices</a></li>
-					<li><a href="Contact.php">Contact</a></li>
-					<li><a href="Departments.php">Departments</a></li>
-					<li><a href="Training.php">Training</a></li>
-					<li><a href="Staff.php">Staff Login </a></li>
-				 
-				 </ul>
+					<LI><a href="Complaints.php">Make a complaint </a></LI>
+					<LI><a href="complaints.php">Product faults</a></LI>
+					<LI><a href="Deliveries.php">Delivery queries</a></LI>
+					<LI><a href="repairs.php"> Servicing </a></LI>
+				</UL>
+				</br>
+				<h3 class="grey_bottom"> Repairs and Replacements</h3>
+				<UL class="sidemenu">
+					<LI><a href="repairs.php">Repairs</a></LI>
+					<LI><a href="repairs.php">Recycling</a></LI>
+					<LI><a href="repairs.php"> Returns Policy</a></LI>
+					<LI><a href="Frequent_Questions.php">FAQ</a></LI>
+					
+				</UL>
+			</blockquote>
+				
 			</span>
-			</div>
-			
-			
-		<div id="column_small">	
-			
-			<span id="topic">
-				<h3 id="topic">ABOUT US </h3>
-			</span>
-			<span id="contents4">
-			 <h3 class="blue">TOLAN SOLAR : OUR COMPANY </h3>
 		
 			
-			<p class="text">
-				Our business aims to provide cheaper alternatives to carbon-fuelled energy creation, by utilizing
-				existing and new technologies to cater for the domestic market. We believe in the potential
-				benefit of research in areas of ElectroChemistry, Electronics and <abbr title="photo voltaic ">PV</abbr>-Technology to produce Solutions
-				for unique problems in third world countries.
-		    <br><br>
-			 The Nigerian market: 
-				With the epileptic nature of electricity in Nigeria. Tolan has focused its attention on providing unique solutions that can 
-				fill the gap left by power shortage and unaffordable infrastructure. 
-				
-			</p>
-
 			
+			
+			<span id="contents2">
+				<h3>Enquires</h3>
 			</span>
-			<span id="contents4">
-			 <h3 class="blue">
-					 OUR BUSINESS</h3>
 			
-			
-				<p class="text">
-			   Tolan Electronics was set up to provide cheaper and efficient energy and lighting solutions.
-			 Our research has enabled us utilize existing technologies to develop 
-			  products aimed at improving the living standards, reduce energy wastage and provide consumers with quality lighting and electrical products at affordable prices.
-				
-				
-				At the moment we have focused on manufacturing and sales of Energy efficient lighting products and <abbr title="photo voltaic ">PV</abbr>-solar technology. 
-				We also sell electronic parts, semi-conductor resales and made to order designs of lighting equipment.
-				<p class="text">
-				We strive to make new technologies available to the our target market at affordable prices.
-				
-				</p>
-             </span>
-			
-</div>
-			
-			<div id="column_right">
-			
-		   <!-- <span id="span#contentsfaq_right">-->
-			
+			<span id="contents2">
+
+
+
 		<form action="" method="post" id="register-form"  novalidate="novalidate"  >
 			
-			<h2>Quick Order</h2>
+			<h2>Enquiries</h2>
 			
 			<div id="form-content">
 				<fieldset>
-                    
+						<div class="fieldgroup">
+						<label for="name"Title">Title</label>
+						<input type="text" name="title" size="20" required />
+						</div>
 					    <div class="fieldgroup">
 					    <label for="name">Firstname</label>
 						<input type="text" name="firstname" size="20" required />
@@ -285,14 +255,19 @@ $(document).ready(function(){
 				</div>
 				</form>	
 				
-			</div>
-			</div>
+				<p class="text3">
+
+				</p>
 			
-		</div>
+			
+			</span>
+	    </div>
+
+	
 	</div>
   	<div id="footer">
 	<span id="disclaimer" ><p>  This website is copyright of tolansolar limited 2012 (c).Tolan Solar is Uk Registered company.     Please visit our facebook page here  </p>
-	<p>| <a href="Copyright.php">Copy right statement </a>| <a href="Cookie_Privacy.php">Cookies Policy</a> | <a href="Credit.php">Credits</a> | <a href="Privacy.php">Data Privacy Statement</a> | <a href="Conditions.php">Terms and Conditions</a> | 
+	<p>| <a href="Copyright.php">Copy right statement </a>| <a href="Cookie_Privacy.php">Cookies Policy</a> | <a href="Credit.php">Credits</a> | <a href="Privacy.php"> Privacy Policy</a> | <a href="Conditions.php">Terms and Conditions</a> | <a href="sitemap.php"> Sitemap </a> | 
 	</p> </span>
 	</div>
 

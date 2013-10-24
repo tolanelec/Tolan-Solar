@@ -1,17 +1,14 @@
-<?php if(preg_match("/MSIE/",getenv("HTTP_USER_AGENT")) || preg_match("/Internet Explorer/",getenv("HTTP_USER_AGENT"))){header('Location:http://localhost/xampp/tolansolar-v1/About_us.php'); }?>
-
+<?php if(preg_match("/MSIE/",getenv("HTTP_USER_AGENT")) || preg_match("/Internet Explorer/",getenv("HTTP_USER_AGENT"))){header('Location:http://localhost/xampp/tolansolar-v1/home.php'); }?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transistional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-
-
-<title>Tolan Solar | About tolan| </title>
+    <title>Tolan Solar and Electronics | solar products| Energy efficent Lighting appliance </title>
 
 <!--[!if IE]><!-->	
-<link rel="stylesheet" href="main3_style.css" type="text/css" >
-<link rel="stylesheet" type="text/css" href="side_form.css" >
+<link rel="stylesheet" href="main3_style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="side_form.css">
  <!--<![endif]-->
 
  
@@ -91,21 +88,21 @@ $(document).ready(function(){
 })(jQuery, window, document);
 </script>
 
+<script>
+ (function() {
+   var cx = '016733281910472351058:azkatytop1i';
+   var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+       '//www.google.com/cse/cse.js?cx=' + cx;
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+ })();
+</script>
+
+
 </head>
 <body>
 
-<div>
-<script>
-  (function() {
-    var cx = '016733281910472351058:azkatytop1i';
-    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-   <div id="Header">
+    <div id="Header">
 	     <div id="menu"> 
 		    <ul class="topmenu">
 			  <li class="search">
@@ -121,7 +118,9 @@ $(document).ready(function(){
 		   </span>
 		 </div>
 	
-		 <ul class="navigate">
+	
+	
+	 <ul class="navigate">
 		    <li><a class="nav" href="home.php"> Home </a>
 				<ul>
 					<li><a href="About_us.php">Who we are</a></li>
@@ -149,6 +148,7 @@ $(document).ready(function(){
 				</ul>
 			</li>
 		 </ul>
+
 	</div>
 	
     <div id="cf">
@@ -162,80 +162,78 @@ $(document).ready(function(){
 		<div id="column_left">
 			<span id="contentsfaq_update">
 		
-	        <h3 class="grey">About Tolan </h3>
-			<p>
-				<ul class="sidemenu">
-					<li><a href="About_us1.php">Our business </a></li>
-					<li><a href="About_us2.php">Research </a></li>
-					<li><a href="About_us2.php#business">Business Philosophy </a></li>
-					<li><a href="About_us3.php">Projects</a> </LI>
-
-				</UL>
-			</p>	
-			    </br>
-				</br>
-				<h3 class="grey_bottom">Tolan Sections </h3>
+	        <h3 class="grey">Customer Support </h3>
 				<UL class="sidemenu">
-					<li><a href="Branches.php">Offices</a></li>
-					<li><a href="Contact.php">Contact</a></li>
-					<li><a href="Departments.php">Departments</a></li>
-					<li><a href="Training.php">Training</a></li>
-					<li><a href="Staff.php">Staff Login </a></li>
-				 
-				 </ul>
+					<LI><a href="Complaints.php">Make a complaint </a></LI>
+					<LI><a href="complaints.php">Product faults</a></LI>
+					<LI><a href="Deliveries.php">Delivery queries</a></LI>
+					<LI><a href="repairs.php"> Servicing </a></LI>
+				</UL>
+				</br>
+				<h3 class="grey_bottom"> Repairs and Replacements</h3>
+				<UL class="sidemenu">
+					<LI><a href="repairs.php">Repairs</a></LI>
+					<LI><a href="repairs.php">Recycling</a></LI>
+					<LI><a href="repairs.php"> Returns Policy</a></LI>
+					<LI><a href="Frequent_Questions.php">FAQ</a></LI>
+					
+				</UL>
+			</blockquote>	
+				
+
 			</span>
 			</div>
 			
 			
 		<div id="column_small">	
-			
-			<span id="topic">
-				<h3 id="topic">ABOUT US </h3>
-			</span>
-			<span id="contents4">
-			 <h3 class="blue">TOLAN SOLAR : OUR COMPANY </h3>
 		
+			<span id="contents5">
+         
+			<h3 class="blue">GET SOLAR PV INSTALLATIONS WITH GREAT DEALS</h3> 
+		
+		<span id="contents5b">
+			<!--<p class="text3">-->
+				<img src="images/freeimage-2421332-panel.jpg" alt="solar array"/>
 			
-			<p class="text">
-				Our business aims to provide cheaper alternatives to carbon-fuelled energy creation, by utilizing
-				existing and new technologies to cater for the domestic market. We believe in the potential
-				benefit of research in areas of ElectroChemistry, Electronics and <abbr title="photo voltaic ">PV</abbr>-Technology to produce Solutions
-				for unique problems in third world countries.
-		    <br><br>
-			 The Nigerian market: 
-				With the epileptic nature of electricity in Nigeria. Tolan has focused its attention on providing unique solutions that can 
-				fill the gap left by power shortage and unaffordable infrastructure. 
+		
+		</span>		
+			<p class="text"> 
+				Stop sufferring from pollution of diesel generators. You don't have to spend over the odds to get 		   
+				solar panel installation for your accomodation. Here at Tolan Solar we offer great deals at various ranges to
+				cater for our customer, plus we provide after care service to ensure you get the best out of your pv solar-array
+				installation and all other solar-powered gadgets and equipment purchased from us. Just use our form to get a 
+				online quick quote or give us a ring today.
 				
-			</p>
-
+			</p>            			
+            </span>
+			<span id="contents5">
 			
+			<h3 class="grey">Tolan-Solar producers of reliable Lighting products </h3><p class="text">
+			Tolan solar also manufacture and sell <abbr title="light emitting diode">LED</abbr> Lightings, rechargeable and AA-Battery
+				disposable lamps and lanterns at bargin prices. High quality products that meet EU standards. Don't compromise on
+				your health and money. Buy Tolan Lighting products.
+				
+            </p>
+		
+		</span>
+		<span id="contents5">
+		    <blockquote>
+				<h3 class="grey"> SOLAR INSTALLATIONS </h3>
+				<P class="text">
+				Solar lights that charge during the day and light up at dusk are now commonly used.
+				Solar-charged lanterns have become popular in developing countries where they provide a safer 
+				and cheaper alternative to kerosene lamps. 
+			
+				</P>
+			</blockquote>
 			</span>
-			<span id="contents4">
-			 <h3 class="blue">
-					 OUR BUSINESS</h3>
+		
+		</span>
+		</div>
 			
+		<div id="column_right">
 			
-				<p class="text">
-			   Tolan Electronics was set up to provide cheaper and efficient energy and lighting solutions.
-			 Our research has enabled us utilize existing technologies to develop 
-			  products aimed at improving the living standards, reduce energy wastage and provide consumers with quality lighting and electrical products at affordable prices.
-				
-				
-				At the moment we have focused on manufacturing and sales of Energy efficient lighting products and <abbr title="photo voltaic ">PV</abbr>-solar technology. 
-				We also sell electronic parts, semi-conductor resales and made to order designs of lighting equipment.
-				<p class="text">
-				We strive to make new technologies available to the our target market at affordable prices.
-				
-				</p>
-             </span>
-			
-</div>
-			
-			<div id="column_right">
-			
-		   <!-- <span id="span#contentsfaq_right">-->
-			
-		<form action="" method="post" id="register-form"  novalidate="novalidate"  >
+			<form action="" method="post" id="register-form"  novalidate="novalidate"  >
 			
 			<h2>Quick Order</h2>
 			
@@ -284,15 +282,15 @@ $(document).ready(function(){
 				</fieldset>		
 				</div>
 				</form>	
-				
+		    
 			</div>
 			</div>
 			
-		</div>
+
 	</div>
   	<div id="footer">
-	<span id="disclaimer" ><p>  This website is copyright of tolansolar limited 2012 (c).Tolan Solar is Uk Registered company.     Please visit our facebook page here  </p>
-	<p>| <a href="Copyright.php">Copy right statement </a>| <a href="Cookie_Privacy.php">Cookies Policy</a> | <a href="Credit.php">Credits</a> | <a href="Privacy.php">Data Privacy Statement</a> | <a href="Conditions.php">Terms and Conditions</a> | 
+    <span id="disclaimer" ><p> This website is copyright of tolansolar limited 2012 (c).Tolan Solar is Uk Registered company.  Please visit our facebook page here </p>
+	<p>| <a href="Copyright.php">Copy right statement </a>| <a href="Cookie_Privacy.php">Cookies Policy</a> | <a href="Credit.php">Credits</a> | <a href="Privacy.php"> Privacy Policy</a> | <a href="Conditions.php">Terms and Conditions</a> | <a href="sitemap.php"> Sitemap </a> | 
 	</p> </span>
 	</div>
 

@@ -661,7 +661,8 @@ p.text{
 	font-size:15px;
 	vertical-align:text-top;
 	border:0px solid #ffffff;
-	padding-bottom:20px;
+	padding-bottom:5px;
+	padding: 10,10;
 	background-color:#ffffff;
 
 
@@ -810,10 +811,9 @@ div#sidebar{
  span#topic
  {
  	position:relative;
-	
 	display:block;
 	font-size:1.2em;
-	width:75%;
+	width:80%;
 	height:5%;
 	border:1px solid;
 	border-radius:10px;
@@ -839,16 +839,16 @@ span#contents3
 	position:relative;
 	float:right;
 	display:block;
-	font-size:1.2em;
+	font-size:15px;
 	vertical-align:left;
 	width:65%;
 	height:80%;
 	border:2px solid;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding-right:10px;
-	padding-left:10px;
-	padding-top:10px;
+	padding-right:20px;
+	padding-left:20px;
+	padding-top:20px;
 	margin-top:20px;
 	margin-right:20px;
 	z-index:13;
@@ -903,16 +903,18 @@ span#contents4
 	display:block;
 	font-size:1.2em;
 	vertical-align:left;
-	width:80%;
+	width:78%;
 	height:40%;
 	border:2px solid;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding-right:10px;
-	padding-left:10px;
-	padding-top:10px;
+	padding-right:25px;
+	padding-left:25px;
+	padding-top:15px;
+	padding-bottom:15px;
 	margin-top:20px;
-	margin-right:20px;
+	margin-right:50px;
+	margin-left:0px;
 	z-index:13;
  
 }
@@ -923,14 +925,14 @@ span#contents5
 	position:relative;
 	float:left;
 	display:block;
-	font-size:1.2em;
+	font-size:15px;
 	vertical-align:left;
 	width:80%;
 	height:auto;
 	border:2px solid;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding-right:10px;
+	padding-right:20px;
 	padding-left:10px;
 	padding-top:10px;
 	margin-top:20px;
@@ -939,23 +941,23 @@ span#contents5
  
 }
 
-span#contents5_side
+span#contents5_long
  {
  	
 	position:relative;
 	display:block;
-	font-size:1.2em;
+	font-size:15px;
 	vertical-align:left;
 	width:80%;
 	height:auto;
 	border:2px solid;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding-right:10px;
+	padding-right:25px;
 	padding-left:10px;
 	padding-top:10px;
-	margin-top:20px;
-	margin-right:20px;
+	margin-top:10px;
+	margin-right:25px;
 	z-index:13;
  
 }
@@ -966,18 +968,17 @@ span#contents5b
 	position:relative;
 	float:left;
 	display:block;
-	font-size:1.2em;
+	font-size:15px;
 	vertical-align:left;
 	width:40%;
 	height:auto;
-	border:1px solid;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding-right:10px;
+	padding-right:5px;
 	padding-left:10px;
-	padding-top:10px;
-	margin-top:20px;
-	margin-right:20px;
+	padding-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
 	z-index:13;
  
 }
@@ -1167,10 +1168,12 @@ span#contents3c
     
    position:absolute;
 	margin-top:0px;
+	margin-left:22%;
+	padding-left:5px;
+	padding-right:5px;
 	width:60%;
-	height:790px;
+	height:780px;
 	float:right;
-	margin-left:25%;
 	background-color:#FFFFFF;
 	border:3px solid #FFFFFF;
 	z-index:13;
