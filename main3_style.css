@@ -3,7 +3,7 @@ body{
    
    margin-left:auto;
    margin-right:auto;
-   font-size: 50%;
+   font-size:15px;
    font-family: helvetica, sans-serif;
 
 
@@ -48,7 +48,7 @@ div#logo img {
 }
 
 div#cf{
-	margin-top:50px;
+	margin-top:40px;
 	margin-left:auto;
 	margin-right:auto;
     width:960px;
@@ -185,7 +185,7 @@ ul.navigate  li a:link
 	display:block;
 	height:28px;
 	color:#FFFFFF;
-	font-size:1.3em;
+	font-size:15px;
 	text-decoration: none;
 
 } 
@@ -516,7 +516,7 @@ span#horizontalmenu
 
 h3.blue{
 
-	font-size:1.5em;
+	font-size:1.0em;
 	display:block;
 	height:20px;
 	color:#ffffff;
@@ -529,7 +529,7 @@ h3.blue{
  
   h3.blue2{
 
-	font-size:1.5em;
+	font-size:1.0em;
 	display:inline;
 	height:20px;
 	width:auto;
@@ -554,7 +554,7 @@ h3.grey{
 
 h3.grey2{
 
-	font-size:1.5em;
+	font-size:1.2em;
 	display:inline;
 	height:20px;
 	width:auto;
@@ -635,27 +635,6 @@ form.quoter3{
 	
 }
 
-fieldset.left{
-
-	float:left;
-	margin-top: 0%;
-	margin-right:auto;
-	width:90%;
-	z-index:13;
-	line-height: normal;
-	padding-right:5px;
-	padding-left:5px;
-	
-	
-}
-
-fieldset.right{
-	float:right;
-	margin-top: 0%;
-	z-index: 13;
-	line-height: normal;
-	
-}
 
 form.quoter h3{
 	display:block;
@@ -679,7 +658,7 @@ p.text{
 	display:block;
 	width:auto;
 	height:auto;
-	font-size:1.5em;
+	font-size:15px;
 	vertical-align:text-top;
 	border:0px solid #ffffff;
 	padding-bottom:20px;
@@ -756,7 +735,6 @@ div#sidebar{
 	position:absolute;
     float:left;
 	display:block;
-	font-size:1.5em;
 	text-align:center;
 	vertical-align: text-top;
 	width:25%;
@@ -775,7 +753,6 @@ div#sidebar{
 	position:absolute;
     float:left;
 	display:block;
-	font-size:1.8em;
 	text-align:center;
 	vertical-align: text-top;
 	width:99%;
@@ -812,7 +789,7 @@ div#sidebar{
  	position:relative;
 	float:right;
 	display:block;
-	font-size:2em;
+	font-size:1em;
 	vertical-align:left;
 	width:65%;
 	height:8%;
@@ -835,7 +812,7 @@ div#sidebar{
  	position:relative;
 	
 	display:block;
-	font-size:1.5em;
+	font-size:1.2em;
 	width:75%;
 	height:5%;
 	border:1px solid;
@@ -850,7 +827,7 @@ div#sidebar{
  }
  
  h3#topic{
-   	font-size:1.5em;
+   	font-size:1.0em;
 	text-align:center;
 	color:#ffffff;
 
@@ -862,7 +839,7 @@ span#contents3
 	position:relative;
 	float:right;
 	display:block;
-	font-size:1.5em;
+	font-size:1.2em;
 	vertical-align:left;
 	width:65%;
 	height:80%;
@@ -1104,7 +1081,7 @@ span#contents3c
 	background-color:#FFFFFF;
 	border:1px solid #FFFFFF;
 	padding:8px;
-	font-size:80%;
+	font-size:50%;
  
 
  }
@@ -1202,7 +1179,7 @@ span#contents3c
  }
  
  #column_small   topic	{
-    font-size:1.5em;
+    font-size:1.0em;
 	text-align:center;
 	color:#ffffff;
 }
@@ -1217,7 +1194,6 @@ div#footer{
 	border-top:2px Solid #000000;
 	padding-top:5px;
 	vertical-align:middle bottom;
-	font-size:80%;
 	z-index:17;
 
 }
@@ -1226,7 +1202,7 @@ span#disclaimer
 {
 	display:block;
 	padding-top:10px;
-	font-size: 2em;
+	font-size: 12px;
 	height: 100px;
 	width:80%;	
 	margin-left:auto;
@@ -1265,14 +1241,7 @@ h3{
 	
 }
 
-h3.form{
-	display:inline;
-	vertical-align:middle;
-	text-transform: capitalize;
-	
-	
 
-}
 
 p.text{
 	vertical-align:text-top;

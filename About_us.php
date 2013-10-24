@@ -5,23 +5,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-    <title>Tolan Solar | About tolan| </title>
-<link rel="stylesheet" href="default.css" type="text/css" />	
 
- <link rel="stylesheet" href="main3_style.css" type="text/css" />
- <link rel="stylesheet" type="text/css" href="bootstrap.css" />
 
+<title>Tolan Solar | About tolan| </title>
+	
 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+<!--[!if IE]><!-->	
+<link rel="stylesheet" href="main3_style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="side_form.css">
+ <!--<![endif]-->
 
-</script>
+ 
+<meta name="description" content=" for affordable solar and lighting products "/>
+<meta name="keywords" content="About Tolan","LED-Lighting production", "Lighting products ", "Solar company"  />
+
 
 <script type-"text/javascript" src="jquerybrowserdetect.js">
 </script>
 
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.min.js">
+</script>
+<!--<script type="text/javascript" src="jquery.validator.min.js"></script>-->
+<script type="text/javascript" src="jquery.validate.min.js">
+</script>
+
 <script type="text/javascript">
 $(document).ready(function(){
   $("p.text").click(function(){
@@ -29,8 +38,63 @@ $(document).ready(function(){
   });
 });
 </script>
-<meta name="description" content=" for affordable solar and lighting products "/>
-<meta name="keywords" content="About Tolan","LED-Lighting production", "Lighting products ", "Solar company"  />
+
+<script type="text/javascript">
+/**
+  * Basic jQuery Validation Form Demo Code
+  * Copyright Sam Deering 2012
+  * Licence: http://www.jquery4u.com/license/
+  */
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+            $("#register-form").validate({
+				rules: {
+				 firstname: "required",
+				 lastname: "required",
+				 email: {
+				   required:true,
+				   email:true
+				 },
+				 contact: {
+				   required: true,
+				   minlength:9
+				 },
+				 product: "required",
+				 agree: "required"
+				 },
+				 messages: {
+				   firstname:"please enter firstname",
+				   lastname:"please enter lastname",
+				   contact: {
+				      required:"please provide a number",
+					  minlength: "phone must be at least 9 characters long" },
+					  product: "please select product",
+					  email: "please enter a valid email address",
+					  agree:"please accept our policy"
+					},
+					submitHandler:function(form){
+				             form.submit();
+                }
+            });
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+
+    });
+
+})(jQuery, window, document);
+</script>
+
 </head>
 <body>
 
@@ -93,8 +157,9 @@ $(document).ready(function(){
 	</div>
 	
     <div id="cf">
-	  	   <img class="bottom" src="images/container_bg9.png" alt="sunset off dock"/>
-           <img class="top" src="images/container_bg3.jpg" alt="solar panel"/>	
+	  	   <img class="bottom" src="images/container_bg9.jpg" alt="solar panel" />
+           <img class="top" src="images/container_bg3.jpg" alt="sunset off dockslo"/>	
+		   
 	</div>
 	
 	<div id="sidebar">
@@ -174,50 +239,61 @@ $(document).ready(function(){
 			
 			<div id="column_right">
 			
-		    <span id="span#contentsfaq_right">
+		   <!-- <span id="span#contentsfaq_right">-->
 			
-			<form class="quoter" method="post" action="getquote.php" >
-				<fieldset class ="left">
-                     <h3> GET A QUOTE NOW  </h3>
-					
-					    <label for="namefield">Name</label></br>
-						<input type="textfield"  name='namefield' value=""/></br>
-						<label for="email">Email</label></br>
-						<input type="textfield" name='emailfield' value="" /></br>
-					
-						<label for="phone">contact number</label></br>
-						<input type="textfield" name="contactfield" value=""/></br>
+		<form action="" method="post" id="register-form"  novalidate="novalidate"  >
+			
+			<h2>Quick Order</h2>
+			
+			<div id="form-content">
+				<fieldset>
+                    
+					    <div class="fieldgroup">
+					    <label for="name">Firstname</label>
+						<input type="text" name="firstname" size="20" required />
+						</div>
+						<div class="fieldgroup">
+						 <label for="lastname">Lastname</label>
+						 <input type="text" name="lastname" size="20" required />
+						</div>
+						<div class="fieldgroup">
+						<label for="email">Email</label>
+						<input type="text" name="email"  size="20" required />
+						</div>
 						
+					    <div class="fieldgroup">
+						<label for="contact">Contact </label>
+						<input type="text" name="contact" size="20" required />
+						</div>
 						
-						<label for="product">select product </label></br>
-						<select name="products">
+						<div class="fieldgroup">
+						<label for="product">Product Selection </label>
+						<select name="product" size="20"/>
 						  <option>solar array</option>
-						  <option>roof installation</option>
+						  <option>roof install</option>
 						  <option>single room </option>
 						  <option>double room</option>
+						  <option>mobile panels</option>
 						  <option>commercial install</option>
-				        </select></br></br>
-					
-					    <input type="hidden" name="stage" value="process" />
-						<input type="submit" name="submit" value=" Submit Quote" />
+				        </select></br>
+						</div>
+	
+						<div class="fieldgroup">
+						<p class="right">By clicking submit you agree to our <a target="_blank" href="/policy">policy</a>.</p>
+						<input type="submit" value="Submit" class="submit" >
+						</div>
+						
 						
 						
 						
 				</fieldset>		
+				</div>
 				</form>	
-			
-			  <span id="contents5">
-
-			</span>	
 				
-
-			
-
-			</span>
 			</div>
 			</div>
 			
-
+		</div>
 	</div>
   	<div id="footer">
 	<span id="disclaimer" ><p>  This website is copyright of tolansolar limited 2012 (c).Tolan Solar is Uk Registered company.     Please visit our facebook page here  </p>
